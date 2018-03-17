@@ -3,7 +3,7 @@
 #####################################
 resource "aws_instance" "api" {
   ami           = "${var.instance_image_id}"
-  instance_type = "${var.api_instance_class}"
+  instance_type = "${var.app_instance_class}"
   monitoring    = true
   key_name      = "${var.key_name}"
   // TODO associate elastic ip
