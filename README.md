@@ -1,6 +1,8 @@
-# terraform-ecs
+# terraform-standard
 
 ## This is still hoge
+
+## Important: To keep Immutable Infrastructure is expected.
 
 ## Prepare
 1. cp terraform.tfvars.sample terraform.tfvars
