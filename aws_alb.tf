@@ -4,8 +4,8 @@
 resource "aws_alb" "alb" {
   name = "ALB"
   subnets = [
-    "${aws_subnet.vpc_main-public-subnet1.id}",
-    "${aws_subnet.vpc_main-public-subnet2.id}",
+    "${aws_subnet.public_subnet1.id}",
+    "${aws_subnet.public_subnet2.id}",
   ]
   security_groups = [
     "${aws_security_group.alb_sg.id}",
@@ -22,8 +22,8 @@ resource "aws_alb_target_group" "alb_target_group" {
     timeout             = 10
     unhealthy_threshold = 5
   }
-  name     = "${var.app_base_name}-target-group"
-  port     = 80
+  name     = "${var.app_base_name}TargetGroup"
+  port     = 3000
   protocol = "HTTP"
   stickiness {
     type = "lb_cookie"
