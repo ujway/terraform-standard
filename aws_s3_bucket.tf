@@ -12,6 +12,6 @@ resource "aws_s3_bucket" "s3_bucket_host" {
 
   tags {
     Name        = "${var.app_base_name}"
-    Environment = "Dev_V0.1.0"
+    Environment = "${var.s3_bucket_tag}"
   }
 }
