@@ -24,16 +24,19 @@ variable "public_segment2_az" {}
 variable "ssh_allow_ip" {}
 
 #DB Settings
-variable "db_user" {}
-variable "db_pass" {}
-variable "db_instance_class" {}
+variable "app_db_user" {}
+variable "app_db_pass" {}
+variable "app_db_instance_class" {}
+variable "job_db_user" {}
+variable "job_db_pass" {}
+variable "job_db_instance_class" {}
 
 #S3 Settings
 variable "s3_bucket_tag" {}
 
 #Instance Settings
 variable "instance_image_id" {}
-variable "api_instance_class" {}
+variable "app_instance_class" {}
 variable "batch_instance_class" {}
 variable "job_instance_class" {}
 
