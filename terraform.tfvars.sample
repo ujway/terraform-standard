@@ -28,6 +28,15 @@ db_user=
 db_pass=
 db_instance_class=
 
+#s3 Settings
+s3_bucket_tag=
+
+#Instance Settings
+instance_image_id=
+api_instance_class=
+batch_instance_class=
+job_instance_class=
+
 #App Settings
 secret_key_base=
 key_name=
